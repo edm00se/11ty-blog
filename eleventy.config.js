@@ -5,6 +5,8 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginToc = require("eleventy-plugin-toc");
+const embedEverything = require("eleventy-plugin-embed-everything");
+const markdownItAttrs = require('markdown-it-attrs');
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
@@ -27,13 +29,16 @@ module.exports = function(eleventyConfig) {
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
-	eleventyConfig.addPlugin(pluginToc);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
 		preAttributes: { tabindex: 0 }
 	});
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+
+	// 3rd party plugins
+	eleventyConfig.addPlugin(pluginToc);
+	eleventyConfig.addPlugin(embedEverything);
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -74,6 +79,10 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+	});
+
+	eleventyConfig.amendLibrary("md", mdLib => {
+		mdLib.use(markdownItAttrs);
 	});
 
 	// Customize Markdown library settings:

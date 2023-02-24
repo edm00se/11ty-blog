@@ -16,6 +16,13 @@ layout: layouts/base.njk
 	{%- endfor %}
 </ul>
 
+{%- if toc %}
+<aside class="toc">
+	<h3>Table of Contents</h3>
+  {{ content | toc | safe }}
+</aside>
+{%- endif%}
+
 {{ content | safe }}
 
 {%- if collections.posts %}

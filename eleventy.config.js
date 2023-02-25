@@ -81,6 +81,14 @@ module.exports = function(eleventyConfig) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
 
+	// custom permalinks
+	eleventyConfig.addFilter("post_permalink", page => {
+		// const yyyy = page.date.getFullYear();
+		// const mm = String(page.date.getMonth() + 1).padStart(2, "0");
+		// return page.permalink ?? `${yyyy}/${mm}/${page.fileSlug}/`;
+		return page.permalink ?? `${page.fileSlug}/`;
+	});
+
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAttrs);
 	});

@@ -99,6 +99,17 @@ module.exports = function(eleventyConfig) {
 		return `<script async id="asciicast-${id}" src="https://asciinema.org/a/${id}.js"></script>`;
 	});
 
+	eleventyConfig.addShortcode("tweet", (user, id) => {
+		// {% tweet "stolinski", "1629212633197936644" %}
+		// https://twitter.com/edm00se/status/1590910273245831170
+		return `<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/${user}/status/${id}?ref_src=twsrc%5Etfw"></a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> `;
+	});
+
+	// work needed for styling, etc.
+	eleventyConfig.addShortcode("tweetbu", (id) => {
+		return `<iframe src="https://tweets.edm00se.codes/${id}/">failed to load</iframe>`;
+	});
+
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAttrs);
 	});

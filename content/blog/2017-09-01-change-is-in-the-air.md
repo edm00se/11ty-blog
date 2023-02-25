@@ -17,7 +17,7 @@ permalink: /self-promotion/change-is-in-the-air/
 
 If you find yourself asking "where was Eric?", this should summarize it all:
 
-https://twitter.com/edm00se/status/863881998561136641
+{% tweetbu "edm00se", "863881998561136641" %}
 
 Instead of trying to do everything all summer, I tend to take a break from blogging and a lot of open source endeavors over the summer. It means I can focus on family time along with yard and house projects.
 

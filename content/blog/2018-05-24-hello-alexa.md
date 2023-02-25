@@ -78,7 +78,7 @@ To correctly hook into the epxected events, we'll **export** a `handler` functio
 
 Here's a start to this file:
 
-https://gist.github.com/edm00se/21702cdba32200001a6e3884b759415d#begin.js
+{% gist "edm00se", "21702cdba32200001a6e3884b759415d", "begin.js" %}
 
 ##### Configure Your Handlers
 
@@ -86,7 +86,7 @@ Since we are now bringing in our handlers, here's a quick look at what is entail
 
 Here's a basic configuration for "Hello World".
 
-https://gist.github.com/edm00se/21702cdba32200001a6e3884b759415d#handlers.js
+{% gist "edm00se", "21702cdba32200001a6e3884b759415d", "handlers.js" %}
 
 To break things down, you'll notice there are two forms of intents, custom and standard Amazon intents. The Amazon standard intents are common across skills, and cover cancellations, stopping, and asking for help.
 

@@ -47,7 +47,7 @@ my-sample-app
 
 #### Config Basics
 
-https://gist.github.com/edm00se/ccab5a897aa47faa4b2fb4881f8a6bf2#docker-compose.yml
+{% gist "edm00se", "ccab5a897aa47faa4b2fb4881f8a6bf2", "docker-compose.yml" %}
 
 The `Dockerfile` information relevant to build a container from a base image, so only things like persisting volumes and port bindings are generally at play.
 
@@ -61,7 +61,7 @@ The only tricky thing you may see in this config is that the database, a service
 
 Here's the completed config file for my GitLab instance.
 
-https://gist.github.com/edm00se/6d095caa3e2d9753b2b1d773a011ef23#docker-compose.yml
+{% gist "edm00se", "6d095caa3e2d9753b2b1d773a011ef23", "docker-compose.yml" %}
 
 You may notice I'm referencing the current working directory with `.`. This works fine in Docker compose and is a great way to reference the current working directory (or project path, relative to the location of the `docker-compose.yml` file).
 

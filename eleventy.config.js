@@ -89,6 +89,16 @@ module.exports = function(eleventyConfig) {
 		return page.permalink ?? `${page.fileSlug}/`;
 	});
 
+  // custom gist shortcode
+  eleventyConfig.addShortcode("gist", (user, gistId, fileName) => {
+    return `<script src="https://gist.github.com/${user ?? 'edm00se'}/${gistId}.js${ fileName ? '?file='+fileName : ''} "></script>`;
+  });
+
+	// custom asciicast embed
+	eleventyConfig.addShortcode("asciicast", (id) => {
+		return `<script async id="asciicast-${id}" src="https://asciinema.org/a/${id}.js"></script>`;
+	});
+
 	eleventyConfig.amendLibrary("md", mdLib => {
 		mdLib.use(markdownItAttrs);
 	});

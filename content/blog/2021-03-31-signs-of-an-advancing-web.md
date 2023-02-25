@@ -33,7 +33,7 @@ Having had to walk this path before, it basically amounted to:
 
 Example:
 
-https://gist.github.com/edm00se/abae980afeda1b2086d9581b36e24f99#getQueryParametersOldWay.js
+{% gist "edm00se", "abae980afeda1b2086d9581b36e24f99", "getQueryParametersOldWay.js" %}
 
 This example is somewhat contrived but illustrates the approach. Ultimately, this thankfully feels like nails on a chalkboard after living with JavaScript after es6 (EcmaScript2015) for some time now. It reminds me that I hated writing es5 (or below!) compliant code and supporting Internet Explorer.
 
@@ -43,7 +43,7 @@ This example is somewhat contrived but illustrates the approach. Ultimately, thi
 
 It's easy to make use of one of a couple implementations here. You can use the `URL` constructor directly on the output of `window.location` or use `URLSearchParams` with `window.location.search`. An example:
 
-https://gist.github.com/edm00se/abae980afeda1b2086d9581b36e24f99#betterWay.js
+{% gist "edm00se", "abae980afeda1b2086d9581b36e24f99", "betterWay.js" %}
 
 Two lines to accomplish what was a separate function before, or one if you chain off the returned `URLSearchParams` instance and don't need to assign it to a temporary variable.
 

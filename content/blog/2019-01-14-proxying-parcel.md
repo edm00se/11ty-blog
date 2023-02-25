@@ -46,7 +46,7 @@ Conceptually, we'll be following a pretty standard format of switching off of a 
 
 It's lightly annotated and reads pretty easily.
 
-https://gist.github.com/edm00se/5162791576ed6c36b58f71d65646d64b#dev-server.js
+{% gist "edm00se", "5162791576ed6c36b58f71d65646d64b", "dev-server.js" %}
 
 #### Of Note
 

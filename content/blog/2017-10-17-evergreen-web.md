@@ -36,11 +36,11 @@ When a web browser is evergreen, it brings with it flexible adaptation to securi
 
 In case you're wondering how this sort of thing comes up in practice, I've got a somewhat handy example that I ran into in my day job. Consider the following object literal assignment in JavaScript. For this example, we're using ES5 syntax.
 
-https://gist.github.com/edm00se/ac9a624ec1943268f738bb624ab0cc51#basic_ob_assign.js
+{% gist "edm00se", "ac9a624ec1943268f738bb624ab0cc51", "basic_ob_assign.js" %}
 
 Now consider we add another function (`yetAnotherFunc`) and while adding it to the object, we get a typo.
 
-https://gist.github.com/edm00se/ac9a624ec1943268f738bb624ab0cc51#oops_assign.js
+{% gist "edm00se", "ac9a624ec1943268f738bb624ab0cc51", "oops_assign.js" %}
 
 Obviously, we meant to use a `:` in place of a `,` but what happens when we have this? Even though we're writing to an ES5 level, evergreen browsers have been picking up significantly more of the ES2015(ES6) and above features and syntax support. Seeing how this is the evolving spec (with annual updates), there's no reason to hold back. So, if you haven't guessed it by now, this works perfectly fine in any browser that supports the [shorthand assignment in Object initializer][obj-init-shorthand], which is part of the ES6 spec. We've defined `yetAnotherFunc` twice since we used the same property name as the function name, but since both reference the same function, there's not much in the way of issues. This also means that because older browsers, such as IE11, aren't evergreen, they _do not_ and cause us to find a functional issue in potentially only one of our tested browsers. (\*any that doesn't support beyond ES5)
 

@@ -30,7 +30,7 @@ Ultimately the skill will allow us to get a random "fact", this follows the fact
 
 We'll be accessing an array of string values. It's coming from a known endpoint and will be a JSON file. My approach is to create a data handling function, in its own JavaScript file, which we can require in and use to access the data. This abstracts away any data operations from the functionality of the application logic.
 
-https://gist.github.com/edm00se/f2245b183ce69f28879ab2191a711491#facts.js
+{% gist "edm00se", "f2245b183ce69f28879ab2191a711491", "facts.js" %}
 
 ##### A Note on Fetch
 
@@ -38,13 +38,13 @@ Why am I using [Axios][npm-axios]?
 
 TL;DR: There's no native support of the native browser [Fetch API][mdn-fetch-api]. This means we need to use _something else_. Initially, I tried using the `node-fetch` package for consistency, but that was a little bloated for my needs. Ultimately, I tried `got` and `axios` packages as well and wound up selecting `axios` for its ease of use, popularity, easy to use API, and file size. For more, check out [my asciicast comparing sizes of these options][fetch-option-asciicast].
 
-[![asciicast](https://asciinema.org/a/153546.svg)](https://asciinema.org/a/153546)
+{% asciicast "153546" %}
 
 #### 2. Registering Handlers
 
 Registering the intent handlers is quite similar to [the basic one outlined in the previous post](/serverless/hello-alexa/#configure-your-handlers). The largest difference is that the "facts" are being brought in via a handle to a promise, the resulting array has a random member selected, and the response is built out. In this skill, I'm also building out a "card", which is displayed in the app or on a visual Echo device.
 
-https://gist.github.com/edm00se/f2245b183ce69f28879ab2191a711491#handlers.js
+{% gist "edm00se", "f2245b183ce69f28879ab2191a711491", "handlers.js" %}
 
 #### 3. Upload and Configure Alexa Skill
 
@@ -73,4 +73,4 @@ I've begun standardizing a couple of the steps for my personal projects, such as
 [dev-dog-skill-amzn]: https://smile.amazon.com/edm00se-Developer-Dog/dp/B06XVW6TLL?sa-no-redirect=1
 [npm-axios]: https://npm.im/axios
 [mdn-fetch-api]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
-[fetch-option-asciicast]: https://asciinema.org/a/
+[fetch-option-asciicast]: https://asciinema.org/a/153546

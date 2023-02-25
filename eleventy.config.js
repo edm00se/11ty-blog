@@ -99,6 +99,13 @@ module.exports = function(eleventyConfig) {
 		return `<script async id="asciicast-${id}" src="https://asciinema.org/a/${id}.js"></script>`;
 	});
 
+	// custom mastodon embed
+	eleventyConfig.addShortcode("toot", (server, user, id) => {
+		// {% toot "honk.farm", "eric", "109298717524705791" %}
+		return `<iframe src="https://${server}/@${user}/${id}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script src="https://${server}/embed.js" async="async"></script>`;
+	});
+
+	// custom tweet embed
 	eleventyConfig.addShortcode("tweet", (user, id) => {
 		// {% tweet "stolinski", "1629212633197936644" %}
 		// https://twitter.com/edm00se/status/1590910273245831170

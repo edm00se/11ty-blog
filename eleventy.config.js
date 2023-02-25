@@ -108,6 +108,12 @@ module.exports = function(eleventyConfig) {
 		// {% toot "honk.farm", "eric", "109298717524705791" %}
 		return `<iframe src="https://${server}/@${user}/${id}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script src="https://${server}/embed.js" async="async"></script>`;
 	});
+	
+	// custom mastodon embed from my server
+	eleventyConfig.addShortcode("honk", (id) => {
+		// {% toot "honk.farm", "eric", "109298717524705791" %}
+		return `<iframe src="https://honk.farm/@eric/${id}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script src="https://${server}/embed.js" async="async"></script>`;
+	});
 
 	// custom tweet embed
 	eleventyConfig.addShortcode("tweet", (user, id) => {

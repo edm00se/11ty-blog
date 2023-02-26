@@ -285,6 +285,11 @@ h2 + .header-anchor {
 	font-size: 1.5em;
 }
 
+/* iframe embeds */
+iframe {
+  height: 100%;
+}
+
 /* search page */
 .search-result-item {
   padding-top: 1em;

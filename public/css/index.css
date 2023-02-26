@@ -284,3 +284,28 @@ a[href].header-anchor:focus,
 h2 + .header-anchor {
 	font-size: 1.5em;
 }
+
+/* search page */
+.search-result-item {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.search-result-item:hover {
+	--color-search-result: #ffc;
+	--link-color: #d07922;
+	backdrop-filter: brightness(150%);
+	color: var(--link-color);
+	border-radius: .5em;
+}
+
+.search-result-item a,
+.search-result-item a[href]:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+input#search {
+  width: 100%;
+  font-size: 2em;
+}

@@ -34,6 +34,6 @@ eleventyNavigation:
     document.getElementById('results').innerHTML = results.join('<hr>');
   })
 
-  const posts = await fetch('/search.json').then(res => res.json());
+  const posts = await fetch('../search.json').then(res => res.json());
 })()
 </script>

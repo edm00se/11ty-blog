@@ -9,7 +9,7 @@ pagination:
     - posts
     - tagList
   addAllPagesToCollections: true
-layout: layouts/home.njk
+layout: layouts/base.njk
 eleventyComputed:
   title: Tagged “{{ tag }}”
 permalink: /tag/{{ tag | slugify }}/{% if pagination.pageNumber != 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}

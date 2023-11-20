@@ -36,7 +36,7 @@ module.exports = eleventyConfig => {
 	});
 
 	// work needed for styling, etc.
-	eleventyConfig.addShortcode("tweetbu", (id) => {
+	eleventyConfig.addShortcode("tweetbu", (user,id) => {
 		return `<iframe src="https://tweets.edm00se.codes/${id}/">failed to load</iframe>`;
 	});
 };

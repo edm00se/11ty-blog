@@ -6,7 +6,7 @@ published: true
 tags: ['web', 'css', 'javascript', 'plugin', 'jquery', 'xpages']
 canonical_url: false
 category: web
-permalink: /web/site-anchors
+permalink: /web/site-anchors/
 toc: true
 ---
 

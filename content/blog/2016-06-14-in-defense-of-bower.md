@@ -6,7 +6,7 @@ published: true
 tags: ['node', 'npm', 'bower']
 canonical_url: false
 category: web
-permalink: /web/in-defense-of-bower
+permalink: /web/in-defense-of-bower/
 toc: true
 ---
 

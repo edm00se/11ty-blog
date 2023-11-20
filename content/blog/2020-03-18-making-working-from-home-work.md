@@ -10,6 +10,7 @@ tags:
 cover_image: ./images/wfh-djurdjica-boskovic-unsplash.jpg
 category: aside
 canonical_url: false
+permalink: /making-working-from-home-work/
 ---
 
 This is a cross-post from my [miscellanea blog](https://misc.edm00se.codes/making-working-from-home-work/).

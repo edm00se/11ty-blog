@@ -15,6 +15,7 @@ cover_image: ./images/rock-n-roll-monkey-FTfjMijq-Ws-unsplash.jpg
 canonical_url: false
 category: ai
 toc: true
+permalink: /putting-the-bots-to-work/
 ---
 Happy November everybody! I made it through October and in spite of some of the doom and gloom to come in this one, I still had _some_ fun in moderating my usual contributing open source repository to Hacktoberfest.
 

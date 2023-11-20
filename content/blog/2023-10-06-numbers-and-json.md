@@ -12,6 +12,7 @@ tags:
 cover_image: ./images/split-flap-numbers.jpg
 category: web
 canonical_url: false
+permalink: /json-and-number-formats/
 ---
 I know it's been a while, figured I'd pop up write a quick blog.
 

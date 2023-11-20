@@ -9,7 +9,7 @@ eleventyNavigation:
 
 <ul>
 {% for tag in collections.all | getAllTags | filterTagList %}
-	{% set tagUrl %}/tag/{{ tag | slugify }}/{% endset %}
-	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }} &mdash; {{ collections[ tag ] | tagCount }}</a></li>
+	{% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></li>
 {% endfor %}
 </ul>

@@ -9,6 +9,9 @@ const embedEverything = require("eleventy-plugin-embed-everything");
 const markdownItAttrs = require('markdown-it-attrs');
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
+const pluginDrafts = require("./eleventy.config.drafts.js");
+const pluginImages = require("./eleventy.config.images.js");
+
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
@@ -24,8 +27,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpeg}");
 
 	// App plugins
-	eleventyConfig.addPlugin(require("./eleventy.config.drafts.js"));
-	eleventyConfig.addPlugin(require("./eleventy.config.images.js"));
+	eleventyConfig.addPlugin(pluginDrafts);
+	eleventyConfig.addPlugin(pluginImages);
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
@@ -90,7 +93,7 @@ module.exports = function(eleventyConfig) {
 		// const yyyy = page.date.getFullYear();
 		// const mm = String(page.date.getMonth() + 1).padStart(2, "0");
 		// return page.permalink ?? `${yyyy}/${mm}/${page.fileSlug}/`;
-		return page.permalink ?? `${page.fileSlug}/`;
+		return `${page.permalink}` ?? `${page.fileSlug}/`;
 	});
 
 	eleventyConfig.addPlugin(require("./eleventy.config.shortcodes.js"));

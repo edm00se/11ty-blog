@@ -34,7 +34,7 @@ As far as I can tell, the previously generated output was coming from a C based 
 
 ### An Example
 
-https://codesandbox.io/embed/json-and-number-precision-wz8hg2?fontsize=14&hidenavigation=1&theme=dark
+{% sandbox "json-and-number-precision-wz8hg2" %}
 
 ### Summary
 

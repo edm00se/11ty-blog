@@ -47,15 +47,17 @@ I began by asking for a [GitHub Action](https://github.com/features/actions) tha
 
 I began with the one that is frequently talked about most. I was a bit surprised by this one as it had my highest expectations, in spite of low expectations in general. On the first ask, I was given a mild surprise as I was returned code in two parts, not one. The first was a node script using `@actions/core` and `@actions/github` to do the heavy lifting. It reads about how you would expect.
 
-https://gist.github.com/edm00se/7e03ec794c947f58ec376b38920632ab#1a_openai_script.js
+{% gist "edm00se", "7e03ec794c947f58ec376b38920632ab", "1a_openai_script.js" %}
 
 The wiring up of the GitHub Action via its workflow YAML was also quite straight forward. It checks out the code, installs the node dependencies, then executes the script.
 
-https://gist.github.com/edm00se/7e03ec794c947f58ec376b38920632ab#1b_openai_config.yml
+{% gist "edm00se", "7e03ec794c947f58ec376b38920632ab", "1b_openai_config.yml" %}
+
 
 After my follow up to allow for the label to override the failing check when present.
 
-https://gist.github.com/edm00se/7e03ec794c947f58ec376b38920632ab#1c_openai_updated_script_snippet.js
+{% gist "edm00se", "7e03ec794c947f58ec376b38920632ab", "1c_openai_updated_script_snippet.js" %}
+
 
 ##### The Other Thing
 
@@ -73,7 +75,7 @@ This wasn't a bad place to start, but I decided to try the others once this spli
 
 Bard started strong, rolling up all the work into a single step and making good use of the `actions/github-script` to both attain the needed dependency functionality and also keep it inside the one file. Note: in no cases did I specify the desire for a single file, but nearly all returned with a single file. Here's what it returned after my update to request the label to escape the condition.
 
-https://gist.github.com/edm00se/7e03ec794c947f58ec376b38920632ab#2b_bard_action_updated.yml
+{% gist "edm00se", "7e03ec794c947f58ec376b38920632ab", "2b_bard_action_updated.yml" %}
 
 A nice feature I noticed only for Bard was the citation of sources. That's right, they call it out with a numbered marker on the side, clicking on it gives the hyperlink, as does it show in the footer of the response. This was an immensely useful feature and it didn't matter that the cited link was in Japanese, using Google Translate I was then able to read and understand the majority of the source. That the source was cited and that it was done with specificity as to what component it was generating gave me some level of assurance either to vet the information myself or at least know who to blame 🙃.
 
@@ -87,7 +89,7 @@ This looked promising, so promising that I attempted to implement the action, in
 
 For any who aren't aware of it, Claude is made [by Anthropic and at least claims](https://www.anthropic.com/index/introducing-claude) to train its models to be "helpful, honest, and harmless". What that functionally means, I'm not entirely certain of, but with any luck it means they aren't stealing some [poor artist's exposure bucks](https://theoatmeal.com/comics/exposure). On first request, it gave me something that wouldn't work, then on calling it out it gave me back the exact same script, except that it had capitalized the word "count". Maybe this sort of question isn't the sort Claude is good for as I've had a couple decent interactions with other tests I've run. See if you can spot the issue.
 
-https://gist.github.com/edm00se/7e03ec794c947f58ec376b38920632ab#3b_claude_aciton_updated.yml
+{% gist "edm00se", "7e03ec794c947f58ec376b38920632ab", "3b_claude_aciton_updated.yml" %}
 
 Right out the gate, wherever Claude pulled this from was attempting to execute the action only on `workflow_dispatch`, which being familiar with GitHub Actions I can tell you is only [for manual invocations](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch), meaning someone would have to go to the Actions tab in the repository and click the "Run Workflow" button. It looked like the assumption from the response was that I'd be providing both the author and repo name and it would spit back the number count of `state: open` PRs, as detected via `octokit/request-action`.
 
@@ -99,7 +101,7 @@ This wasn't for my need, so I moved on.
 
 Officially, Microsoft's Bing team acts like Bing Chat is only available from MS Edge. In reality, if you have [the relevant URL](https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx), you can get to it from presumably any modern web browser. Also, I didn't add this one until after I solved my problems. It was a bit of code that I needed to implement with some urgency. That said, I'm somewhat disappointed I didn't think to check Bing Chat's response at the time, as I rather enjoy that in spite of being written primarily as a BASH script, it makes use of the GitHub API directly to get the data needed and does so with an apparently decent amount of knowledge as to what I was looking for. Here it is after being updated to allow for the label escape.
 
-https://gist.github.com/edm00se/7e03ec794c947f58ec376b38920632ab#4_bing_chat_action_updated.yml
+{% gist "edm00se", "7e03ec794c947f58ec376b38920632ab", "4_bing_chat_action_updated.yml" %}
 
 ##### Verdict
 
@@ -109,7 +111,7 @@ I was intrigued, in spite of having already moved on. Maybe I'll consider checki
 
 Ultimately, I was pressed for time and had to go with the one I felt most comfortable with, the Bard solution. As I mentioned already I had to change things after I realized it didn't do _exactly_ what I needed to, after having implemented it live; there's nothing like testing in prod as they say. In any case, here's what I came up with in the end. I tried to lean hard into the using the steps as the logic, had to forcibly filter the open PRs so it wouldn't confuse all of those in my repo with the PR author's, set that as output from the step, which I could use to drive the message and fail or succeed steps accordingly. It's not perfect, but I can easily maintain it and it helped a fair amount for the remainder of the month since it went online over [`240 workflow runs`](https://github.com/edm00se/awesome-board-games/actions/workflows/limit-prs.yml). Here's a copy, otherwise [you can see it where it lives](https://github.com/edm00se/awesome-board-games/blob/65a2f528c076f9d66179d59a7fa152d918a35c6d/.github/workflows/limit-prs.yml).
 
-https://gist.github.com/edm00se/7e03ec794c947f58ec376b38920632ab#my_final.yml
+{% gist "edm00se", "7e03ec794c947f58ec376b38920632ab", "my_final.yml" %}
 
 ### Take Aways
 

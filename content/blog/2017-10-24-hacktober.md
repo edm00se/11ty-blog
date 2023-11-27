@@ -3,10 +3,17 @@ title: 'Hacktoberfest and More'
 description: 'the code still runs on servers'
 date: 2017-10-24
 published: true
-tags: ['serverless', 'virtualization', 'containers', 'intro', 'concepts', 'open-source']
+tags:
+    - serverless
+    - virtualization
+    - containers
+    - intro
+    - concepts
+    - open-source
 canonical_url: false
 category: open-source
-permalink: /open-source/hacktober2017/
+permalink: /os/hacktober2017/
+redirect_from: /open-source/hacktober2017/
 ---
 
 ### Hacktoberfest 2017

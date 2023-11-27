@@ -3,10 +3,17 @@ title: 'Open Source Contribution'
 description: 'learning by doing more and playing nice with others'
 date: 2017-06-16
 published: true
-tags: ['javascript', 'open-source', 'node', 'prettier', 'eslint', 'jest']
+tags:
+    - javascript
+    - open-source
+    - node
+    - prettier
+    - eslint
+    - jest
 canonical_url: false
 category: open-source
-permalink: /open-source/contribution/
+permalink: /os/contribution/
+redirect_from: /open-source/contribution/
 ---
 
 ### Intro

@@ -7,7 +7,8 @@ tags: ['xpages', 'domino', 'java', 'servlet']
 series: xpages-servlets
 canonical_url: false
 category: xpages-servlets
-permalink: /xpages-servlets/servlet-intro-and-flavors/
+permalink: /servlet-intro-and-flavors/
+redirect_from: /xpages-servlets/servlet-intro-and-flavors/
 ---
 
 #### Preface

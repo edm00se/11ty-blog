@@ -5,7 +5,8 @@ date: 2014-11-19
 published: true
 tags: ['xpages', 'domino', 'ibm', 'angularjs', 'mvc', 'bootstrap']
 category: self-promotion
-permalink: /self-promotion/vote-for-me/
+permalink: /vote-for-me/
+redirect_from: /self-promotion/vote-for-me/
 ---
 
 ### Vote for IBM ConnectED 2015 Sessions

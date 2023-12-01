@@ -6,7 +6,8 @@ tags: ['xpages', 'domino', 'javascript', 'dojo']
 canonical_url: false
 description: 'a dojo-only version of the calendar picker improver script by Mark Roden'
 category: xpages
-permalink: /xpages/cal-picker-improver-dojo-only/
+permalink: /cal-picker-improver-dojo-only/
+redirect_from: /xpages/cal-picker-improver-dojo-only/
 ---
 
 ### The Original

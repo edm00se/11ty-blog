@@ -6,7 +6,8 @@ published: true
 tags: ['scm', 'git']
 canonical_url: false
 category: scm
-permalink: /scm/git-history-search/
+permalink: /git-history-search/
+redirect_from: /scm/git-history-search/
 ---
 
 ### First, A Shout-Out

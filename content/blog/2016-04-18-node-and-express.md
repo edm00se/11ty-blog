@@ -7,7 +7,8 @@ tags: ['node', 'express', 'iseries', 'jdbc', 'jt400', 'notes', 'domino', 'nsf']
 series: node-express-iseries-nsf
 canonical_url: false
 category: node
-permalink: /node/node-and-express/
+permalink: /node-and-express/
+redirect_from: /node/node-and-express/
 toc: true
 ---
 

@@ -6,7 +6,8 @@ published: true
 tags: ['java', 'xpages']
 canonical_url: false
 category: java
-permalink: /java/custom-json-serilization/
+permalink: /custom-json-serialization/
+redirect_from: /java/custom-json-serilization/
 ---
 
 ### Intro

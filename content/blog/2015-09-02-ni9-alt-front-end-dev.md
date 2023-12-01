@@ -5,7 +5,8 @@ date: 2015-09-02
 published: true
 tags: ['front-end', 'structure', 'rest', 'xpages', 'ni9']
 category: self-promotion
-permalink: /self-promotion/ni9-alt-front-end-dev/
+permalink: /ni9-alt-front-end-dev/
+redirect_from: /self-promotion/ni9-alt-front-end-dev/
 ---
 
 #### Notes in 9 180: Alternative Front-End Development for XPages

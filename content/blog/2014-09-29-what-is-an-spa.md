@@ -5,7 +5,8 @@ date: 2014-09-29
 published: true
 tags: ['xpages', 'spa', 'angularjs', 'rest']
 category: spa
-permalink: /spa/what-is-an-spa/
+permalink: /what-is-an-spa/
+redirect_from: /spa/what-is-an-spa/
 ---
 
 ### Single Page Applications

@@ -7,7 +7,8 @@ series: xpages-servlets
 tags: ['admin']
 canonical_url: false
 category: admin
-permalink: /admin/interlude-and-announcement/
+permalink: /interlude-and-announcement/
+redirect_from: /admin/interlude-and-announcement/
 ---
 
 ### An Interlude for Servlets

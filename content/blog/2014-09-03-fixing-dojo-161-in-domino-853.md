@@ -5,7 +5,8 @@ date: 2014-09-03
 published: true
 tags: ['xpages', 'domino', 'java', 'json', 'data', 'xagent', 'angularjs']
 category: xpages
-permalink: /xpages/fixing-dojo-161-in-domino-853/
+permalink: /fixing-dojo-161-in-domino-853/
+redirect_from: /xpages/fixing-dojo-161-in-domino-853/
 ---
 
 #### CLARIFICATION

@@ -6,7 +6,8 @@ published: true
 tags: ['scm', 'git', 'gitlab', 'docker', 'bash']
 canonical_url: false
 category: docker
-permalink: /docker/scripting-server-upgrades/
+permalink: /scripting-server-upgrades/
+redirect_from: /docker/scripting-server-upgrades/
 ---
 
 ### Intro

@@ -6,7 +6,8 @@ published: true
 tags: ['web', 'parcel', 'plugin', 'javscript', 'ie']
 canonical_url: false
 category: web
-permalink: /web/parcel-plugin-goodie-bag/
+permalink: /parcel-plugin-goodie-bag/
+redirect_from: /web/parcel-plugin-goodie-bag/
 ---
 
 # Happy π Day!

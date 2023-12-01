@@ -5,7 +5,8 @@ date: 2015-08-04
 published: true
 tags: ['mwlug', 'structure', 'mvc', 'rest', 'xpages']
 category: self-promotion
-permalink: /self-promotion/my-mwlug-2015-session/
+permalink: /my-mwlug-2015-session/
+redirect_from: /self-promotion/my-mwlug-2015-session/
 ---
 
 #### [My Post-Conference Post with goodies!](/self-promotion/mwlug-ad113-success)

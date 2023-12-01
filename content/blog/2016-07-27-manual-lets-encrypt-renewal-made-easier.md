@@ -6,7 +6,8 @@ published: true
 tags: ['ibm', 'bluemix', 'node', 'https', 'lets-encrypt']
 canonical_url: false
 category: self-promotion
-permalink: /self-promotion/manual-lets-encrypt-renewal-made-easier/
+permalink: /manual-lets-encrypt-renewal-made-easier/
+redirect_from: /self-promotion/manual-lets-encrypt-renewal-made-easier/
 ---
 
 ### Intro

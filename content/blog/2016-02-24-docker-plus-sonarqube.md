@@ -6,7 +6,8 @@ published: true
 tags: ['scm', 'git', 'xpages', 'ni9', 'docker']
 canonical_url: false
 category: self-promotion
-permalink: /self-promotion/docker-plus-sonarqube/
+permalink: /docker-plus-sonarqube/
+redirect_from: /self-promotion/docker-plus-sonarqube/
 ---
 
 ### Intro

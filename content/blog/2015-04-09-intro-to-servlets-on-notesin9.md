@@ -5,7 +5,8 @@ date: 2015-04-09
 published: true
 tags: ['xpages', 'domino', 'java', 'servlets', 'ni9']
 category: self-promotion
-permalink: /self-promotion/intro-to-servlets-on-notesin9/
+permalink: /intro-to-servlets-on-notesin9/
+redirect_from: /self-promotion/intro-to-servlets-on-notesin9/
 ---
 
 ### I'm on Notesin9!

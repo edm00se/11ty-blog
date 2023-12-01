@@ -6,7 +6,9 @@ tags: ['xpages', 'domino', 'redmine', 'source control']
 canonical_url: false
 description: 'getting the syntax highlighting everyone wants'
 category: xpages
-permalink: /xpages/redmine-coderay-domino-syntax-highlighting/
+permalink: /redmine-coderay-domino-syntax-highlighting/
+redirect_from: /xpages/redmine-coderay-domino-syntax-highlighting/
+
 ---
 
 ### Syntax Highlighting in Redmine Project Repository

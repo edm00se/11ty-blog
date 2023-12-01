@@ -6,7 +6,8 @@ published: true
 series: xpages-servlets
 tags: ['xpages', 'domino', 'javascript', 'servlet', 'angularjs']
 category: xpages-servlets
-permalink: /xpages-servlets/building-a-front-end-pt2-an-app-with-angular/
+permalink: /building-a-front-end-pt2-an-app-with-angular/
+redirect_from: /xpages-servlets/building-a-front-end-pt2-an-app-with-angular/
 toc: true
 ---
 

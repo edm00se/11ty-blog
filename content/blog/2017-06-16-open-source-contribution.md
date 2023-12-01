@@ -12,7 +12,7 @@ tags:
     - jest
 canonical_url: false
 category: open-source
-permalink: /os/contribution/
+permalink: /os-contribution/
 redirect_from: /open-source/contribution/
 ---
 

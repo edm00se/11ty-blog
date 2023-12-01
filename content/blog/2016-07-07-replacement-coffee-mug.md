@@ -6,7 +6,8 @@ published: true
 tags: ['coffee', 'mug', 'desk']
 canonical_url: false
 category: aside
-permalink: /aside/replacement-coffee-mug/
+permalink: /replacement-coffee-mug/
+redirect_from: /aside/replacement-coffee-mug/
 ---
 
 ### Intro
@@ -17,7 +18,7 @@ This post has little, if anything, to do with coding. I'm posting it in my ["asi
 
 My trusty coffee mug, which has been with me since prior to graduating university, has served me well. Sadly, after a fateful day involving being knocked over and rolling off of the desk, it landed, handle first, onto the floor. While surgery (sugru-ry?) was able to restore most function to the mug, it retained a deep crack under the surface of the enamel paint, running vertically for nearly the entirety of its height, leading to its inevitable decline in health. It is survived by its desk mates "laptop" and monitors "lefty" and "righty".
 
-![Fare thee well, trusty mug, you will be missed.](../images/TrustyMug.jpg)
+![Fare thee well, trusty mug, you will be missed.](./images/TrustyMug.jpg)
 
 ### Accepting Submissions
 

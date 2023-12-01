@@ -6,7 +6,8 @@ published: true
 tags: ['scm', 'git', 'xpages', 'ibm', 'node']
 canonical_url: false
 category: self-promotion
-permalink: /self-promotion/looking-back-and-forward/
+permalink: /looking-back-and-forward/
+redirect_from: /self-promotion/looking-back-and-forward/
 ---
 
 

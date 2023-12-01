@@ -6,7 +6,8 @@ published: true
 tags: ['scm', 'git', 'xpages', 'ibm']
 canonical_url: false
 category: scm
-permalink: /scm/git-squash-and-update/
+permalink: /git-squash-and-update/
+redirect_from: /scm/git-squash-and-update/
 ---
 
 ### Intro

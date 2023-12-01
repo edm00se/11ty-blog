@@ -6,7 +6,8 @@ published: true
 tags: ['xpages', 'domino', 'javascript', 'nginx']
 canonical_url: false
 category: nginx
-permalink: /nginx/brief-intro-to-nginx/
+permalink: /brief-intro-to-nginx/
+redirect_from: /nginx/brief-intro-to-nginx/
 ---
 
 ### Intro

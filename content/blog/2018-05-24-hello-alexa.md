@@ -7,7 +7,8 @@ series: serverless-intro
 tags: ['serverless', 'alexa', 'aws', 'amazon', 'echo', 'javascript', 'node', 'faas', 'skill']
 canonical_url: false
 category: serverless
-permalink: /serverless/hello-alexa/
+permalink: /serverless-hellow-alexa/
+redirect_from: /serverless/hello-alexa/
 toc: true
 ---
 

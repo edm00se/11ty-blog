@@ -10,7 +10,8 @@ tags:
   - java
 category: xpages
 canonical_url: false
-permalink: /xpages/consistent-multivalue-formatting/
+permalink: /consistent-multivalue-formatting/
+redirect_from: /xpages/consistent-multivalue-formatting/
 ---
 
 ### Consistent Multi-Value Formatting

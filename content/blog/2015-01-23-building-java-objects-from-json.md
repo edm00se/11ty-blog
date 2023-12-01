@@ -5,7 +5,8 @@ date: 2015-01-23
 published: true
 tags: ['xpages', 'domino', 'java', 'json', 'gson', 'rest']
 category: java
-permalink: /java/building-java-objects-from-json/
+permalink: /building-java-objects-from-json/
+redirect_from: /java/building-java-objects-from-json/
 ---
 
 ### Intro

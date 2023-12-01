@@ -6,7 +6,8 @@ published: true
 tags: ['ibm connect', 'session', 'series', '2015']
 canonical_url: false
 category: self-promotion
-permalink: /self-promotion/2015-a-year-in-review/
+permalink: /2015-a-year-in-review/
+redirect_from: /self-promotion/2015-a-year-in-review/
 ---
 
 ### Intro

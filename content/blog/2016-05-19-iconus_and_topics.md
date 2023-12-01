@@ -6,7 +6,8 @@ published: true
 tags: ['iconus', 'structure', 'front-end', 'back-end', 'xpages-servlets', 'scm', 'yeoman', 'grunt', 'rest', 'angularjs']
 canonical_url: false
 category: self-promotion
-permalink: /self-promotion/iconus_and_topics/
+permalink: /iconus_and_topics/
+redirect_from: /self-promotion/iconus_and_topics/
 ---
 
 ### Intro

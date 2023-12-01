@@ -7,7 +7,8 @@ series: task-runners-with-domino
 tags: ['grunt', 'gulp', 'git', 'scm', 'static', 'generator']
 canonical_url: false
 category: web
-permalink: /web/task-runners-pt1-intro/
+permalink: /task-runners-pt1-intro/
+redirect_from: /web/task-runners-pt1-intro/
 toc: true
 ---
 

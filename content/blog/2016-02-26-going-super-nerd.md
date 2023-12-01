@@ -6,7 +6,8 @@ published: true
 tags: ['node', 'npm', 'cli', 'emoji', 'markdown', 'gitbook', 'yeoman']
 canonical_url: false
 category: web
-permalink: /web/going-super-nerd/
+permalink: /going-super-nerd/
+redirect_from: /web/going-super-nerd/
 ---
 
 ### Intro

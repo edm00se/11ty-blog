@@ -6,7 +6,8 @@ published: true
 series: xpages-servlets
 tags: ['xpages', 'domino', 'javascript', 'servlet', 'angularjs']
 category: self-promotion
-permalink: /self-promotion/servlet-series-review/
+permalink: /servlet-series-review/
+redirect_from: /self-promotion/servlet-series-review/
 ---
 
 ### The Road Ahead

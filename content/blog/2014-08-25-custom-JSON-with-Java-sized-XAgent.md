@@ -5,7 +5,8 @@ date: 2014-08-25
 published: true
 tags: ['xpages', 'domino', 'java', 'json', 'data', 'xagent', 'rest', 'angularjs']
 category: xpages
-permalink: /xpages/custom-JSON-with-Java-sized-XAgent/
+permalink: /custom-JSON-with_Java-sized-XAgent/
+redirect_from: /xpages/custom-JSON-with-Java-sized-XAgent/
 ---
 
 ### TL;DR

@@ -6,7 +6,8 @@ published: true
 tags: ['mwlug', 'structure', 'rest', 'xpages']
 canonical_url: false
 category: app-structure
-permalink: /app-structure/something-i-overheard-at-mwlug/
+permalink: /something-i-overheard/at/mwlug/
+redirect_from: /app-structure/something-i-overheard-at-mwlug/
 ---
 
 #### Intro

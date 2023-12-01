@@ -6,7 +6,8 @@ published: true
 tags: ['parcel', 'proxy', 'tomcat', 'domino', 'tooling', 'web', 'development']
 canonical_url: false
 category: web
-permalink: /web/proxying-parcel/
+permalink: /proxying-parcel/
+redirect_from: /web/proxying-parcel/
 ---
 
 ### Intro

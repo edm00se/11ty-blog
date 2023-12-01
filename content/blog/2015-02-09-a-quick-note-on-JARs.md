@@ -5,7 +5,8 @@ date: 2015-02-09
 published: true
 tags: ['xpages', 'domino', 'java']
 category: xpages
-permalink: /xpages/a-quick-note-on-JARs/
+permalink: /a-quick-note-on-JARs/
+redirect_from: /xpages/a-quick-note-on-JARs/
 ---
 
 [Edit]

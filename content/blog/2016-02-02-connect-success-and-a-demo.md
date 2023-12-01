@@ -6,7 +6,8 @@ published: true
 tags: ['dde', 'scm', 'git', 'node', 'npm', 'structure', 'ibm', 'connect']
 canonical_url: false
 category: self-promotion
-permalink: /self-promotion/connect-success-and-a-demo/
+permalink: /connect/success-and-a-demo/
+redirect_from: /self-promotion/connect-success-and-a-demo/
 ---
 
 [Update]

@@ -6,7 +6,8 @@ published: true
 tags: ['xpages', 'dde', 'xsl', 'grunt', 'jenkins']
 canonical_url: false
 category: xpages
-permalink: /xpages/xsltproc-and-headless-dde/
+permalink: /xsltproc-and-headless-dde/
+redirect_from: /xpages/xsltproc-and-headless-dde/
 toc: true
 ---
 

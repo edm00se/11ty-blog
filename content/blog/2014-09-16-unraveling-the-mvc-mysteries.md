@@ -5,7 +5,8 @@ date: 2014-09-16
 published: true
 tags: ['xpages', 'domino', 'java', 'rest', 'mvc']
 category: xpages
-permalink: /xpages/unraveling-the-mvc-mysteries/
+permalink: /unraveling-the-mvc-mysteries/
+redirect_from: /xpages/unraveling-the-mvc-mysteries/
 ---
 
 #### Intro

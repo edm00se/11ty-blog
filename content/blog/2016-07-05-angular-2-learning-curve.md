@@ -6,7 +6,8 @@ published: true
 tags: ['angular', 'typescript', 'es6', 'es5', 'npm']
 canonical_url: false
 category: web
-permalink: /web/angular-2-learning-curve/
+permalink: /angular-2-learning-curve/
+redirect_from: /web/angular-2-learning-curve/
 toc: true
 ---
 

@@ -6,7 +6,8 @@ published: true
 tags: ['xpages', 'bluemix', 'xpages-servlets']
 canonical_url: false
 category: bluemix
-permalink: /bluemix/everyone-is-a-critic/
+permalink: /everyone-is-a-criic/
+redirect_from: /bluemix/everyone-is-a-critic/
 ---
 
 #### Everyone's A Critic

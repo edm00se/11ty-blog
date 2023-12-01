@@ -6,7 +6,8 @@ published: true
 tags: ['xpages', 'bluemix', 'xpages-servlets', 'java', 'github']
 canonical_url: false
 category: xpages
-permalink: /xpages/java-rite-of-passage/
+permalink: /java-rite-of-passage/
+redirect_from: /xpages/java-rite-of-passage/
 ---
 
 ### Intro

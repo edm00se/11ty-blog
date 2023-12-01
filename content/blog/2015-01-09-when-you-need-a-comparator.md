@@ -5,7 +5,8 @@ date: 2015-01-09
 published: true
 tags: ['xpages', 'java', 'bean', 'comparator']
 category: java
-permalink: /java/when-you-need-a-comparator/
+permalink: /when-you-need-a-comparator/
+redirect_from: /java/when-you-need-a-comparator/
 ---
 
 ### Introduction

@@ -6,7 +6,8 @@ published: true
 tags: ['scm', 'dvcs', 'vcs', 'git', 'hg', 'svn', 'cvs', 'ciao']
 canonical_url: false
 category: scm
-permalink: /scm/scm-survey-results/
+permalink: /scm-survey-results/
+redirect_from: /scm/scm-survey-results/
 ---
 
 ### Shout Out

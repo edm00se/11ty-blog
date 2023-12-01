@@ -12,7 +12,7 @@ tags:
     - open-source
 canonical_url: false
 category: open-source
-permalink: /os/hacktober2017/
+permalink: /os-hacktober2017/
 redirect_from: /open-source/hacktober2017/
 ---
 

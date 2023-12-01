@@ -6,7 +6,8 @@ published: true
 tags: ['scm', 'dvcs', 'vcs', 'git', 'hg', 'svn', 'cvs', 'ciao']
 canonical_url: false
 category: scm
-permalink: /scm/source-control-survey/
+permalink: /source-control-survey/
+redirect_from: /scm/source-control-survey/
 ---
 
 ### Intro

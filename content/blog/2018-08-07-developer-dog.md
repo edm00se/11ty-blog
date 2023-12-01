@@ -7,7 +7,8 @@ series: serverless-intro
 tags: ['serverless', 'alexa', 'aws', 'amazon', 'echo', 'javascript', 'node', 'faas', 'skill']
 canonical_url: false
 category: serverless
-permalink: /serverless/developer-dog-alexa-skill/
+permalink: /developer-dog-alexa-skill/
+redirect_from: /serverless/developer-dog-alexa-skill/
 ---
 
 Hello from [#THATConference][that-conf]! This is my second year attending and I've been quite happy. The only thing I miss here is the great people I had the privelege of meeting and seeing within the IBM and friends world, such as the always excellent [MWLUG](https://mwlug.com) that was a little over a week ago, but my work has shifted away over the last year. I'm looking forward to a couple of ideas in the future though, so who knows what the future will bring.

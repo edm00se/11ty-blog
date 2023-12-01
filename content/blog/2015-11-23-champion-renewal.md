@@ -6,7 +6,8 @@ published: true
 tags: ['xpages', 'domino', 'ibm', 'champion']
 canonical_url: false
 category: self-promotion
-permalink: /self-promotion/champion-renewal/
+permalink: /champion-renewal/
+redirect_from: /self-promotion/champion-renewal/
 ---
 
 ### 2016 IBM Champions Announced

@@ -5,7 +5,8 @@ date: 2014-08-19
 published: true
 tags: ['xpages', 'domino', 'java', 'rest', 'authentication']
 category: xpages
-permalink: /xpages/server-rest-with-authentication/
+permalink: /server-rest-with-authentication/
+redirect_from: /xpages/server-rest-with-authentication/
 ---
 
 ### For Starters

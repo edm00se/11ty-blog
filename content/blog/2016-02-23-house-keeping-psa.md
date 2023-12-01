@@ -6,7 +6,8 @@ published: true
 tags: ['site', 'admin', 'nifty']
 canonical_url: false
 category: admin
-permalink: /admin/house-keeping-psa/
+permalink: /house-keeping-psa/
+redirect_from: /admin/house-keeping-psa/
 ---
 
 [Update]

@@ -5,7 +5,8 @@ date: 2015-07-10
 published: true
 tags: ['xpages', 'domino', 'ibm', 'bluemix']
 category: bluemix
-permalink: /bluemix/xsp-on-bluemix/
+permalink: /xsp-on-bluemix/
+redirect_from: /bluemix/xsp-on-bluemix/
 ---
 
 ![the droids I've been looking for](./images/lookSirDroids.jpg)

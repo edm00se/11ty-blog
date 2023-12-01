@@ -6,7 +6,8 @@ published: false
 tags: ['node', 'raspberry-pi', 'ibm', 'watson', 'cloud', 'iot']
 canonical_url: false
 category: iot-pi
-permalink: /iot-pi/iot-and-raspberry-pi/
+permalink: /iot-and-raspberry-pi/
+redirect_from: /iot-pi/iot-and-raspberry-pi/
 ---
 
 ### Intro

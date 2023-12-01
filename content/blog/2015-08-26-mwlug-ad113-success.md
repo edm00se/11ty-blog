@@ -6,7 +6,8 @@ published: true
 tags: ['mwlug', 'nginx', 'xpages']
 canonical_url: false
 category: nginx
-permalink: /self-promotion/mwlug-ad113-success/
+permalink: /mwlug-ad113-success/
+redirect_from: /self-promotion/mwlug-ad113-success/
 ---
 
 ![against two other app dev sessions and free beer?!](./images/angry-deadpool.jpg)

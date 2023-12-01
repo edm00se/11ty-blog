@@ -6,7 +6,8 @@ published: true
 tags: ['scm', 'git', 'xpages', 'grunt', 'connect', 'ibm', 'ni9']
 canonical_url: false
 category: self-promotion
-permalink: /self-promotion/ni9-connect-highlights-and-mwlug-announcement/
+permalink: /ni9-connect-highlights-and-mwlug-announcement/
+redirect_from: /self-promotion/ni9-connect-highlights-and-mwlug-announcement/
 ---
 
 ### Intro

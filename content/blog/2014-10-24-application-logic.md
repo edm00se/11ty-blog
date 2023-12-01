@@ -5,7 +5,8 @@ date: 2014-10-24
 published: true
 tags: ['xpages', 'javascript', 'mvc', 'rest', 'angularjs']
 category: xpages
-permalink: /xpages/application-logic/
+permalink: /application-logic/
+redirect_from: /xpages/application-logic/
 ---
 
 ### Application Logic

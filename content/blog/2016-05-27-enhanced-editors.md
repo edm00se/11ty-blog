@@ -6,7 +6,8 @@ published: true
 tags: ['web', 'node', 'javascript', 'electron', 'atom', 'sublimetext', 'vs code', 'webstorm ide']
 canonical_url: false
 category: web
-permalink: /web/enhanced-editors/
+permalink: /enhanced-editors/
+redirect_from: /web/enhanced-editors/
 toc: true
 ---
 

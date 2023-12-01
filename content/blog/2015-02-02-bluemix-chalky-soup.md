@@ -5,7 +5,8 @@ date: 2015-02-02
 published: true
 tags: ['xpages', 'domino', 'ibm', 'connected', 'conference', 'lotussphere', 'bluemix']
 category: bluemix
-permalink: /bluemix/bluemix-chalky-soup/
+permalink: /bluemix-chalky-soup/
+redirect_from: /bluemix/bluemix-chalky-soup/
 ---
 
 ### Blue Chalky Soup

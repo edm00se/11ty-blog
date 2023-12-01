@@ -6,7 +6,8 @@ published: true
 tags: ['dde', 'scm', 'git', 'cli', 'node', 'npm', 'structure']
 canonical_url: false
 category: xpages
-permalink: /xpages/getting-started-with-it-all/
+permalink: /getting-started-wtih-it-all/
+redirect_from: /xpages/getting-started-with-it-all/
 toc: true
 ---
 

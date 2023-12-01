@@ -5,7 +5,8 @@ date: 2014-09-18
 published: true
 tags: ['xpages', 'domino', 'javascript', 'rest', 'ajax']
 category: xpages
-permalink: /xpages/rest-is-best/
+permalink: /rest-is-best/
+redirect_from: /xpages/rest-is-best/
 ---
 
 [EDIT]

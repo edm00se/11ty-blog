@@ -7,7 +7,8 @@ series: xpages-servlets
 tags: ['xpages', 'domino', 'java', 'servlet']
 canonical_url: false
 category: xpages-servlets
-permalink: /xpages-servlets/servlets-handling-data-round-house-kick/
+permalink: /servlets/handling-data-round-house-kick/
+redirect_from: /xpages-servlets/servlets-handling-data-round-house-kick/
 toc: true
 ---
 

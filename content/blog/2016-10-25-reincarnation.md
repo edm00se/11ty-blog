@@ -6,7 +6,8 @@ published: true
 tags: ['site', 'admin', 'nifty', 'amp']
 canonical_url: false
 category: admin
-permalink: /admin/reincarnation/
+permalink: /reincarnation/
+redirect_from: /admin/reincarnation/
 ---
 
 ### Intro

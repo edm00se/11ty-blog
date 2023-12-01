@@ -6,7 +6,8 @@ published: true
 tags: ['docker', 'youtube', 'tips']
 canonical_url: false
 category: docker
-permalink: /docker/quick-tips/
+permalink: /docker-quick-tips/
+redirect_from: /docker/quick-tips/
 ---
 
 ### Docker

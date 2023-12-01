@@ -6,7 +6,8 @@ published: true
 tags: ['scm', 'git', 'gitlab', 'docker', 'docker-compose']
 canonical_url: false
 category: docker
-permalink: /docker/composing-with/
+permalink: /composing-with-docker/
+redirect_from: /docker/composing-with/
 cover_image: ./images/larisa-birta-102093-unsplash.jpg
 ---
 

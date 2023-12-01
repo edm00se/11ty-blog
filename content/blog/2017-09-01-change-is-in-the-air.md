@@ -10,7 +10,8 @@ tags:
     - day-job
 canonical_url: false
 category: self-promotion
-permalink: /self-promotion/change-is-in-the-air/
+permalink: /change-is-in-the-air/
+redirect_from: /self-promotion/change-is-in-the-air/
 ---
 
 ### I'm Back

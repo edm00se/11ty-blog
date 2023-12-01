@@ -4,6 +4,6 @@ eleventyNavigation:
   key: About
   order: 3
 ---
-# About Me
+# Eric McCormick
 
-I am a person that writes stuff.
+Señor Software Developer, lover of coffee, 3D printing, and hand tool woodworking.

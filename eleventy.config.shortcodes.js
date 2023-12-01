@@ -28,7 +28,7 @@ module.exports = eleventyConfig => {
 	// custom mastodon embed
 	eleventyConfig.addShortcode("toot", (server, user, id) => {
 		// {% toot "honk.farm", "eric", "109298717524705791" %}
-		return `<iframe src="https://${server}/@${user}/${id}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script src="https://${server}/embed.js" async="async"></script>`;
+		return `<iframe src="https://${server}/@${user}/${id}/embed" class="mastodon-embed" style="width: 80%;margin-left: auto;margin-right: auto;display: block;min-height: 32em;background-color: white;" allowfullscreen="allowfullscreen"></iframe><script src="https://${server}/embed.js" async="async"></script>`;
 	});
 	
 	// custom mastodon embed from my server

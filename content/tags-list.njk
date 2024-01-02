@@ -10,6 +10,6 @@ eleventyNavigation:
 <ul>
 {% for tag, count in collections.postsSortedByTagCount %}
     {% set tagUrl %}/tag/{{ tag | slug }}/{% endset %}
-    <li><a href="{{ tagUrl | url }}" class="post-tag">{{ tag }} ({{ count }})</a></li>
+    <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }} ({{ count }})</a></li>
 {% endfor %}
 </ul>

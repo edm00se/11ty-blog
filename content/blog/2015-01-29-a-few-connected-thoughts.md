@@ -3,7 +3,7 @@ title: 'A Few ConnectED Thoughts'
 description: 'IBM ConnectED 2015'
 date: 2015-01-29
 published: true
-tags: ['xpages', 'domino', 'ibm', 'conferene', 'lotussphere', 'bluemix']
+tags: ['xpages', 'domino', 'ibm', 'conference', 'lotussphere', 'bluemix']
 category: xpages
 permalink: /a-few-connected-thoughts/
 redirect_from: /xpages/a-few-connected-thoughts/

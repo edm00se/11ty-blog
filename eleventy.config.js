@@ -7,12 +7,14 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginToc = require("eleventy-plugin-toc");
 const embedEverything = require("eleventy-plugin-embed-everything");
 const markdownItAttrs = require('markdown-it-attrs');
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+// const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 
-module.exports = function(eleventyConfig) {
+module.exports = async function(eleventyConfig) {
+	const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
+
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
@@ -84,9 +86,25 @@ module.exports = function(eleventyConfig) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
 
-	eleventyConfig.addFilter("tagCount", function(collection) {
-		return Array.from(collection).length;
+	eleventyConfig.addFilter("tagCount", function(tagCollection) {
+		return (tagCollection || []).length;
 	});
+
+	// https://stackoverflow.com/questions/69198527/how-do-you-sort-a-list-of-blog-post-tags-by-the-number-of-posts-that-contain-the/69201497#69201497
+	eleventyConfig.addCollection("postsSortedByTagCount", function(collectionApi) {
+		const allPosts = collectionApi.getAll();
+		const countPostsByTag = new Map();
+		allPosts.forEach((post) => {
+		  const tags = post.data.tags || [];
+		  tags.forEach((tag) => {
+			const count = countPostsByTag.get(tag) || 0;
+			countPostsByTag.set(tag, count + 1);
+		  })
+		});
+		countPostsByTag.delete('posts');
+		const sortedArray = [...countPostsByTag].sort((a, b) => b[1] - a[1]);
+		return sortedArray;
+	  });
 
 	// custom permalinks
 	eleventyConfig.addFilter("post_permalink", page => {

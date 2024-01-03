@@ -29,13 +29,12 @@ jobs:
           npm run build:ghpages
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./_site
   deploy:
     needs: build
     permissions:
       pages: write
       id-token: write
+      actions: read
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

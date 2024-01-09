@@ -4,11 +4,7 @@ layout: layouts/base.njk
 {# Only include the syntax highlighter CSS on blog posts #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
-{%- if cover_image %}
-	<h1>{{ title }} | todo: cover_image</h1>
-{%- else %}
-	<h1>{{ title }}</h1>
-{%- endif %}
+<h1>{{ title }}</h1>
 
 <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
@@ -17,6 +13,15 @@ layout: layouts/base.njk
 	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
 </ul>
+
+{%- if cover_image %}
+	{%- css %}
+		.cover-img > img {
+			width: 100%;
+		}
+	{%- endcss %}
+	<div class="cover-img">{% image cover_image, "cover image from post" %}</div>
+{%- endif %}
 
 {%- if toc %}
 <aside class="toc">

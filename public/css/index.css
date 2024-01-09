@@ -185,6 +185,34 @@ header {
 	text-decoration: underline;
 }
 
+/* Post Cover Image */
+.cover-wrap {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.cover-wrap h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.cover-wrap .post-metadata {
+	position: absolute;
+  	bottom: 2em;
+	left: 50%;
+	transform: translate(-50%);
+}
+a.cover-link,
+a.cover-link[href]:visited {
+	color: white;
+}
+.cover-img,
+.cover-img > img {
+	width: 100%;
+	filter: brightness(75%);
+}
+
 /* TOC */
 aside.toc {
 	padding-top: 1em;

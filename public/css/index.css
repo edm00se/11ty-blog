@@ -210,6 +210,7 @@ header {
 a.cover-link,
 a.cover-link[href]:visited {
 	color: white;
+	padding: 0px;
 }
 .cover-img,
 .cover-img > img {
@@ -250,6 +251,15 @@ nav.toc ol {
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
 	color: var(--color-gray-90);
+}
+.postlist-item:hover .cover-img > img {
+	filter: brightness(90%);
+}
+.postlist-item:hover .cover-wrap h2 {
+	--link-color: #d07922;
+	color: var(--link-color);
+	backdrop-filter: brightness(120%);
+	border-radius: 0.5em;
 }
 .postlist-date {
 	word-spacing: -0.5px;

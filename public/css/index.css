@@ -197,6 +197,10 @@ header {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.cover-wrap time {
+	display: inline-block;
+	color: var(--color-gray-90);
+}
 .cover-wrap .post-metadata {
 	position: absolute;
   	bottom: 2em;

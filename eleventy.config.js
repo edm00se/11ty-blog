@@ -101,6 +101,10 @@ module.exports = async function(eleventyConfig) {
 		return `${page.permalink}` ?? `${page.fileSlug}/`;
 	});
 
+	eleventyConfig.addFilter("modifyCoverImage", (imgPath) => {
+		return imgPath.replace('./','./blog/');
+	});
+
 	eleventyConfig.addPlugin(require("./eleventy.config.shortcodes.js"));
 
 	eleventyConfig.amendLibrary("md", mdLib => {

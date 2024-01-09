@@ -185,6 +185,39 @@ header {
 	text-decoration: underline;
 }
 
+/* Post Cover Image */
+.cover-wrap {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+.cover-wrap h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.cover-wrap time {
+	display: inline-block;
+	color: var(--color-gray-90);
+}
+.cover-wrap .post-metadata {
+	position: absolute;
+  	bottom: 2em;
+	left: 50%;
+	transform: translate(-50%);
+}
+a.cover-link,
+a.cover-link[href]:visited {
+	color: white;
+	padding: 0px;
+}
+.cover-img,
+.cover-img > img {
+	width: 100%;
+	filter: brightness(75%);
+}
+
 /* TOC */
 aside.toc {
 	padding-top: 1em;
@@ -218,6 +251,15 @@ nav.toc ol {
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
 	color: var(--color-gray-90);
+}
+.postlist-item:hover .cover-img > img {
+	filter: brightness(90%);
+}
+.postlist-item:hover .cover-wrap h2 {
+	--link-color: #d07922;
+	color: var(--link-color);
+	backdrop-filter: brightness(120%);
+	border-radius: 0.5em;
 }
 .postlist-date {
 	word-spacing: -0.5px;

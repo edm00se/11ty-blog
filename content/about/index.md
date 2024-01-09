@@ -4,6 +4,15 @@ eleventyNavigation:
   key: About
   order: 3
 ---
-# Eric McCormick
 
-Señor Software Developer, lover of coffee, 3D printing, and hand tool woodworking.
+{%- css %}
+main {
+  text-align: center;
+}
+{%- endcss %}
+
+# {{ ghProfile.name }}
+
+<img alt="it me" src="{{ ghProfile.avatar_url }}&size=260" style="margin-left: auto;margin-right: auto;display: inherit;border-radius: 50%;" />
+
+{{ ghProfile.bio }}

@@ -7,6 +7,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginToc = require("eleventy-plugin-toc");
 const embedEverything = require("eleventy-plugin-embed-everything");
 const markdownItAttrs = require('markdown-it-attrs');
+const addRemoteData = require("@aaashur/eleventy-plugin-add-remote-data");
 // const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
@@ -44,6 +45,14 @@ module.exports = async function(eleventyConfig) {
 	// 3rd party plugins
 	eleventyConfig.addPlugin(pluginToc);
 	eleventyConfig.addPlugin(embedEverything);
+	eleventyConfig.addPlugin(addRemoteData, {
+        data: {
+            ghProfile: {
+				url: 'https://api.github.com/users/edm00se',
+				type: 'json'
+			}
+        },
+    });
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -99,6 +108,10 @@ module.exports = async function(eleventyConfig) {
 		// const mm = String(page.date.getMonth() + 1).padStart(2, "0");
 		// return page.permalink ?? `${yyyy}/${mm}/${page.fileSlug}/`;
 		return `${page.permalink}` ?? `${page.fileSlug}/`;
+	});
+
+	eleventyConfig.addFilter("modifyCoverImage", (imgPath) => {
+		return imgPath.replace('./','./blog/');
 	});
 
 	eleventyConfig.addPlugin(require("./eleventy.config.shortcodes.js"));

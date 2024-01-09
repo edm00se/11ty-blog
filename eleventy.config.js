@@ -110,6 +110,26 @@ module.exports = async function(eleventyConfig) {
 		return `${page.permalink}` ?? `${page.fileSlug}/`;
 	});
 
+	eleventyConfig.addFilter("failOverCoverImage", function(imgPath) {
+		if(imgPath) {
+			return imgPath;
+		} else {
+			const coverImagePrefix = './images/cover_images';
+			const fallbackCoverImages = [
+				'stack_o_blocks.jpg',
+				'stack_o_books.jpg',
+				'stack_o_jenga.jpg',
+				'stack_o_macarons.jpg',
+				'stack_o_more_books.jpg',
+				'stack_o_papers.jpg',
+				'stack_o_plaid.jpg',
+				'stack_o_rocks.jpg'
+			];
+			const randomFallbackCoverImage = fallbackCoverImages[Math.floor(Math.random() * fallbackCoverImages.length)];
+			return `${coverImagePrefix}/${randomFallbackCoverImage}`;
+		}
+	});
+
 	eleventyConfig.addFilter("modifyCoverImage", (imgPath) => {
 		return imgPath.replace('./','./blog/');
 	});

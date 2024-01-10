@@ -27,13 +27,15 @@ layout: layouts/base.njk
 	</div>
 {%- else %}
 	<h1>{{ title }}</h1>
-	<ul class="post-metadata">
-		<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-		{%- for tag in tags | filterTagList %}
+	<div class="post-metadata">
+		<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+		<ul>
+			{%- for tag in tags | filterTagList %}
 			{%- set tagUrl %}/tag/{{ tag | slugify }}/{% endset %}
 			<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-		{%- endfor %}
-	</ul>
+			{%- endfor %}
+		</ul>
+	</div>
 {%- endif %}
 
 {%- if toc %}

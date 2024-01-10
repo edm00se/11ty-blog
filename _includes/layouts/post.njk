@@ -6,25 +6,25 @@ layout: layouts/base.njk
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 {%- if cover_image %}
 	{%- set modifiedCoverImagePath %}{{ cover_image }}/{% endset %}
-	<a href="{{ post.url }}" class="postlist-link cover-link">
-		<div class="cover-wrap">
-			<span class="cover-img">{% image modifiedCoverImagePath, "cover image from post" %}</span>
-			<h2>
-				{% if title %}
-					{{ title }}
-				{% else %}
-					<code>{{ url }}</code>
-				{% endif %}
-			</h2>
-			<ul class="post-metadata">
-				<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
+	<div class="cover-wrap">
+		<span class="cover-img">{% image modifiedCoverImagePath, "cover image from post" %}</span>
+		<h2>
+			{% if title %}
+				{{ title }}
+			{% else %}
+				<code>{{ url }}</code>
+			{% endif %}
+		</h2>
+		<div class="post-metadata">
+			<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+			<ul>
 				{%- for tag in tags | filterTagList %}
 				{%- set tagUrl %}/tag/{{ tag | slugify }}/{% endset %}
 				<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
 				{%- endfor %}
 			</ul>
 		</div>
-	</a>
+	</div>
 {%- else %}
 	<h1>{{ title }}</h1>
 	<ul class="post-metadata">

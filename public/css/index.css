@@ -291,16 +291,16 @@ nav.toc ol {
 }
 
 /* Tags list */
-.post-metadata {
+.post-metadata ul {
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: .5em;
-	list-style: none;
 	padding: 0;
 	margin: 0;
+	list-style: none;
 }
 .post-metadata time {
-	margin-right: 1em;
+	text-align: center;
 }
 
 /* Direct Links / Markdown Headers */

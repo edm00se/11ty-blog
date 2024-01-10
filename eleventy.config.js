@@ -8,7 +8,7 @@ const pluginToc = require("eleventy-plugin-toc");
 const embedEverything = require("eleventy-plugin-embed-everything");
 const markdownItAttrs = require('markdown-it-attrs');
 const addRemoteData = require("@aaashur/eleventy-plugin-add-remote-data");
-// const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const sharp = require("sharp"); // available via @11ty/eleventy-img
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
@@ -22,6 +22,22 @@ module.exports = async function(eleventyConfig) {
 		"./public/": "/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 	});
+
+	// adds favicon
+	if (process.env.NODE_ENV === 'production') {
+		eleventyConfig.on('eleventy.before', async () => {
+		  console.log('[11ty] Generating Favicon');
+		  await sharp('content/favicon.png')
+			.png()
+			.resize(96, 96)
+			.toFile('public/img/icon-96x96.png')
+			.catch(function (err) {
+			  console.log('[11ty] ERROR Generating favicon');
+			  console.error(err);
+			});
+		});
+	  }
+	  eleventyConfig.watchIgnores.add('public/img/icon-96x96.png');
 
 	// Run Eleventy when these files change:
 	// https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets

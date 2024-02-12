@@ -102,6 +102,10 @@ module.exports = async function(eleventyConfig) {
 		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
 	});
 
+	eleventyConfig.addFilter("stringify", (ob) => {
+		return JSON.stringify(ob);
+	});
+
 	// https://stackoverflow.com/questions/69198527/how-do-you-sort-a-list-of-blog-post-tags-by-the-number-of-posts-that-contain-the/69201497#69201497
 	eleventyConfig.addCollection("postsSortedByTagCount", function(collectionApi) {
 		const allPosts = collectionApi.getAll();

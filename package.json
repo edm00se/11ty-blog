@@ -4,7 +4,6 @@
 	"description": "A starter repository for a blog web site using the Eleventy site generator.",
 	"scripts": {
 		"build": "env NODE_ENV=production npx @11ty/eleventy",
-		"build:ghpages": "env NODE_ENV=production npx @11ty/eleventy --pathprefix=/11ty-blog/",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",

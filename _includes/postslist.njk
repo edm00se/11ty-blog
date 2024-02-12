@@ -5,6 +5,7 @@
 		{%- set modifiedCoverImagePath %}{{ post.data.cover_image | failOverCoverImage | modifyCoverImage }}/{% endset %}
 		<a href="{{ post.url }}" class="postlist-link cover-link">
 			<div class="cover-wrap">
+				TODO: make post tile more "card"-like
 				<span class="cover-img">{% image modifiedCoverImagePath, "cover image from post" %}</span>
 				<h2>
 					{% if post.data.title %}
@@ -14,6 +15,11 @@
 					{% endif %}
 					<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate  }}</time>
 				</h2>
+				<span>
+					TODO: description<br/>
+					TODO: post date, xx min read<br/>
+					TODO: tags
+				</span>
 			</div>
 		</a>
 	</li>

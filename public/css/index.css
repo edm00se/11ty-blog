@@ -71,11 +71,11 @@ p:last-child {
 	margin-bottom: 0;
 }
 p {
-	line-height: 1.5;
+	line-height: 1.5em;
 }
 
 li {
-	line-height: 1.5;
+	line-height: 1.5em;
 }
 
 a[href] {
@@ -168,8 +168,10 @@ header {
 }
 
 /* Nav */
+nav {
+	flex-grow: 1;
+}
 .nav {
-	display: flex;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -183,6 +185,17 @@ header {
 }
 .nav a[href][aria-current="page"] {
 	text-decoration: underline;
+}
+ul.nav >li:last-child.nav-item {
+	display: inherit;
+	float:right;
+	margin-right: inherit;
+}
+
+button.toggle-theme {
+	background-color: transparent;
+	border: 0;
+	color: var(--text-color);
 }
 
 /* Post Cover Image */

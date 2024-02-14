@@ -16,9 +16,14 @@
 					<time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate  }}</time>
 				</h2>
 				<span>
-					TODO: description<br/>
-					TODO: post date, xx min read<br/>
-					TODO: tags
+					{{ post.data.description }}<br/>
+					TODO: read time<br/>
+					<ul>
+						{%- for tag in post.data.tags | filterTagList %}
+						{%- set tagUrl %}/tag/{{ tag | slugify }}/{% endset %}
+						<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
+						{%- endfor %}
+					</ul>
 				</span>
 			</div>
 		</a>

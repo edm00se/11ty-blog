@@ -304,7 +304,7 @@ nav.toc ol {
 }
 
 /* Tags list */
-.post-metadata ul {
+.post-metadata ul, ul.postlist-tag-links {
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: .5em;
@@ -314,6 +314,13 @@ nav.toc ol {
 }
 .post-metadata time {
 	text-align: center;
+}
+a.postlist-link {
+	text-decoration: none;
+}
+ul.postlist-tag-links {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Direct Links / Markdown Headers */

@@ -8,6 +8,7 @@ const pluginToc = require("eleventy-plugin-toc");
 const embedEverything = require("eleventy-plugin-embed-everything");
 const markdownItAttrs = require('markdown-it-attrs');
 const addRemoteData = require("@aaashur/eleventy-plugin-add-remote-data");
+const timeToRead = require('eleventy-plugin-time-to-read');
 const sharp = require("sharp"); // available via @11ty/eleventy-img
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
@@ -69,6 +70,19 @@ module.exports = async function(eleventyConfig) {
 			}
         },
     });
+	eleventyConfig.addPlugin(timeToRead, {
+		speed: '800 characters per minute',
+		language: 'en',
+		style: 'short',
+		type: 'unit',
+		hours: 'auto',
+		minutes: true,
+		seconds: false,
+		digits: 1,
+		output: function(data) {
+		  return data.timing;
+		}
+	  })
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {

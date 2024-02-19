@@ -170,12 +170,9 @@ module.exports = async function(eleventyConfig) {
 
 	eleventyConfig.addPlugin(require("./eleventy.config.shortcodes.js"));
 
-	eleventyConfig.amendLibrary("md", mdLib => {
-		mdLib.use(markdownItAttrs);
-	});
-
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
+		mdLib.use(markdownItAttrs);
 		mdLib.use(markdownItAnchor, {
 			permalink: markdownItAnchor.permalink.ariaHidden({
 				placement: "after",

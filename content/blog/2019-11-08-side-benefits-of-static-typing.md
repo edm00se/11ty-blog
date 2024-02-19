@@ -17,6 +17,7 @@ redirect_from: /web/side-benefits-of-static-typing/
 Regardless of your being for or against statically typing and transpiling your JavaScript code, there are advantages to doing so. No system is absolute and yes, it does transpile into JavaScript proper. That said, there can be a great number of conveniences brought in by typing your JS source code. The most obvious major reason is that, properly defined, your models, API use, and function input and output will be consistently to an expected format. This addresses one of the largest complaints about JavaScript as a language, that everything is so [loosey-goosey](https://m-w.com/dictionary/loosey-goosey).
 
 {% image "./images/untitledGoose.png", "the (un)titled goose" %}
+
 *The titular antihero and miscreant of the [Untitled Goose Game](https://goose.game/)*
 
 Beyond this primary advantage, there are a good number of side benefits to using a static typed system in front of your JavaScript code base.

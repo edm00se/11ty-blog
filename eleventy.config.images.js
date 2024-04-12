@@ -10,7 +10,7 @@ module.exports = eleventyConfig => {
 		// Add any other Image utility options here:
 
 		// optional, output image formats
-		formats: ["avif", "webp", "auto"],
+		formats: ["webp", "jpeg"],
 		// formats: ["auto"],
 
 		// optional, output image widths
@@ -32,7 +32,8 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
 		let metadata = await Image(src, {
 			widths: ["auto"],
-			formats: ["avif", "jpeg", "gif"],
+			formats: ["webp", "jpeg"],
+			// formats: ["auto"],
 			sharpOptions: {
 				animated: true
 			},

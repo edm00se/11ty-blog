@@ -50,29 +50,6 @@ module.exports = async function(eleventyConfig) {
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(pluginImages);
-	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// which file extensions to process
-		extensions: "html",
-
-		// Add any other Image utility options here:
-
-		// optional, output image formats
-		formats: ["avif", "webp", "auto"],
-		// formats: ["auto"],
-
-		// optional, output image widths
-		widths: ["auto"],
-
-		sharpOptions: {
-			animated: true
-		},
-
-		// optional, attributes assigned on <img> override these values.
-		defaultAttributes: {
-			loading: "lazy",
-			decoding: "async",
-		},
-	});
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);

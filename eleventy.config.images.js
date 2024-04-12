@@ -1,4 +1,4 @@
-const path = require("path");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const Image = require("@11ty/eleventy-img");
 
 module.exports = eleventyConfig => {

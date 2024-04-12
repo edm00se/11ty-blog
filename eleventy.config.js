@@ -9,7 +9,6 @@ const embedEverything = require("eleventy-plugin-embed-everything");
 const markdownItAttrs = require('markdown-it-attrs');
 const addRemoteData = require("@aaashur/eleventy-plugin-add-remote-data");
 const timeToRead = require('eleventy-plugin-time-to-read');
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const sharp = require("sharp"); // available via @11ty/eleventy-img
 
 const pluginDrafts = require("./eleventy.config.drafts.js");

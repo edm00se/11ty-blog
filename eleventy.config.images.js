@@ -14,7 +14,7 @@ module.exports = eleventyConfig => {
 		// formats: ["auto"],
 
 		// optional, output image widths
-		widths: ["auto"],
+		// widths: ["auto"],
 
 		sharpOptions: {
 			animated: true
@@ -31,7 +31,7 @@ module.exports = eleventyConfig => {
 	// https://www.11ty.dev/docs/plugins/image/
 	eleventyConfig.addShortcode("image", async function (src, alt, sizes) {
 		let metadata = await Image(src, {
-			widths: ["auto"],
+			// widths: ["auto"],
 			formats: ["webp", "jpeg"],
 			// formats: ["auto"],
 			sharpOptions: {

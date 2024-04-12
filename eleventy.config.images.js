@@ -14,7 +14,7 @@ module.exports = eleventyConfig => {
 		// formats: ["auto"],
 
 		// optional, output image widths
-		widths: [600, "auto"],
+		widths: ["auto"],
 
 		sharpOptions: {
 			animated: true

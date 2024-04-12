@@ -9,14 +9,14 @@ tags:
   - tooling
   - json
   - javascript
-cover_image: ./images/split-flap-numbers.jpg
+cover_image: split-flap-numbers.jpg
 category: web
 canonical_url: false
 permalink: /json-and-number-formats/
 ---
 I know it's been a while, figured I'd pop up write a quick blog.
 
-{% image "./images/kraken.gif", "a kraken lifting a sailing ship above water, cracking it in half, and dumping the people into the sea" %}
+![a kraken lifting a sailing ship above water, cracking it in half, and dumping the people into the sea](./images/kraken.gif)
 
 Numbers came up as a topic today, you know, those primitive entities in JavaScript. Yeah, I was surprised as well.
 

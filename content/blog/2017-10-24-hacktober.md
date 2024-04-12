@@ -20,7 +20,7 @@ redirect_from: /open-source/hacktober2017/
 
 October brings many good things with it. It's the beginning of autumnal colors here, along with some yard raking in my case. It also brings with it not just Oktoberfest, but Hacktoberfest!
 
-{% image "./images/Hacktoberfest2017.png", "Hacktoberfest 2017" %}
+!["Hacktoberfest 2017"](./images/Hacktoberfest2017.png)
 
 [Hacktoberfest][hacktoberfest-url] is a month long open source support initiative, sponsored by [Digital Ocean][dig-ocean], partnering with [GitHub][gh-url]. It's meant to promote open source involvement and contribution. As added incentive, if you meet the criteria, you can get a free t-shirt (and stickers). Who doesn't like free?
 

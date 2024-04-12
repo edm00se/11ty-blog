@@ -16,7 +16,7 @@ redirect_from: /self-promotion/change-is-in-the-air/
 
 ### I'm Back
 
-{% image "./images/MauiYoureWelcome.gif", "What can I say except you're welcome?" %}
+!["What can I say except you're welcome?"](./images/MauiYoureWelcome.gif)
 
 ##### In Case You Missed It
 
@@ -26,7 +26,7 @@ If you find yourself asking "where was Eric?", this should summarize it all:
 
 Instead of trying to do everything all summer, I tend to take a break from blogging and a lot of open source endeavors over the summer. It means I can focus on family time along with yard and house projects.
 
-{% image "./images/Olaf_summer.gif", "Ah.... Summer" %}
+!['Ah... summer'](./images/Olaf_summer.gif)
 
 That's all paid off and, with fall fast approaching, I've found myself wanting to start those things back up; ramping up into winter when I don't do as much outdoors. I've had a couple of things going on, so I figured a post to recap would be in good order.
 

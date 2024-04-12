@@ -11,7 +11,7 @@ tags:
   - proxy
   - parcel
   - javascript
-cover_image: ./images/which-way.jpg
+cover_image: which-way.jpg
 category: web
 canonical_url: false
 permalink: /proxying-apis-with-parcel-v2/

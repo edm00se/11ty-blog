@@ -8,7 +8,7 @@ tags:
   - web
   - javascript
   - front-end
-cover_image: ./images/old_flash.jpg
+cover_image: old_flash.jpg
 category: web
 canonical_url: false
 permalink: /signs-of-an-advancing-web/

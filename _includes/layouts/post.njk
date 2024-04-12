@@ -5,9 +5,8 @@ layout: layouts/base.njk
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 {%- if cover_image %}
-	{%- set modifiedCoverImagePath %}{{ cover_image }}/{% endset %}
 	<div class="cover-wrap">
-		<span class="cover-img">{% image modifiedCoverImagePath, "cover image from post" %}</span>
+		<span class="cover-img"><img alt="temp cover image" src="/blog/images/cover_images/{{cover_image}}" /></span>
 		<h2>
 			{% if title %}
 				{{ title }}

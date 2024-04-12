@@ -9,6 +9,7 @@ const embedEverything = require("eleventy-plugin-embed-everything");
 const markdownItAttrs = require('markdown-it-attrs');
 const addRemoteData = require("@aaashur/eleventy-plugin-add-remote-data");
 const timeToRead = require('eleventy-plugin-time-to-read');
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 const sharp = require("sharp"); // available via @11ty/eleventy-img
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
@@ -49,6 +50,29 @@ module.exports = async function(eleventyConfig) {
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(pluginImages);
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		// which file extensions to process
+		extensions: "html",
+
+		// Add any other Image utility options here:
+
+		// optional, output image formats
+		formats: ["webp", "jpeg", "gif"],
+		// formats: ["auto"],
+
+		// optional, output image widths
+		widths: ["auto"],
+
+		sharpOptions: {
+			animated: true
+		},
+
+		// optional, attributes assigned on <img> override these values.
+		defaultAttributes: {
+			loading: "lazy",
+			decoding: "async",
+		},
+	});
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
@@ -145,10 +169,8 @@ module.exports = async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("failOverCoverImage", function(imgPath) {
-		if(imgPath) {
-			return imgPath;
-		} else {
-			const coverImagePrefix = './images/cover_images';
+		let nwImgPath = imgPath;
+		if(!nwImgPath) {
 			const fallbackCoverImages = [
 				'stack_o_blocks.jpg',
 				'stack_o_books.jpg',
@@ -159,13 +181,14 @@ module.exports = async function(eleventyConfig) {
 				'stack_o_plaid.jpg',
 				'stack_o_rocks.jpg'
 			];
-			const randomFallbackCoverImage = fallbackCoverImages[Math.floor(Math.random() * fallbackCoverImages.length)];
-			return `${coverImagePrefix}/${randomFallbackCoverImage}`;
+			nwImgPath = fallbackCoverImages[Math.floor(Math.random() * fallbackCoverImages.length)];
 		}
+		return nwImgPath;
 	});
 
 	eleventyConfig.addFilter("modifyCoverImage", (imgPath) => {
-		return imgPath.replace('./','./blog/');
+		return imgPath.replace('./','content/blog/').replace(/\/$/, '');
+		// return imgPath.replace('./','./blog/');
 	});
 
 	eleventyConfig.addPlugin(require("./eleventy.config.shortcodes.js"));

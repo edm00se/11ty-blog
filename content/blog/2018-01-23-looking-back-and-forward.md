@@ -13,7 +13,7 @@ redirect_from: /self-promotion/looking-back-and-forward/
 
 The past year has been great fun. I've had a couple of major changes, including a change in job and beginning to work from home. I've also done a few different projects that I hadn't been involved in before. I'll get to those in a little bit, but first...
 
-{% image "./images/GoodNewsEveryone.png", "good news everyone" %}
+!["good news everyone"](./images/GoodNewsEveryone.png)
 *How about some good news for a change?*
 
 ### Thank You!

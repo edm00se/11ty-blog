@@ -8,7 +8,7 @@ canonical_url: false
 category: docker
 permalink: /composing-with-docker/
 redirect_from: /docker/composing-with/
-cover_image: ./images/larisa-birta-102093-unsplash.jpg
+cover_image: larisa-birta-102093-unsplash.jpg
 ---
 
 ### Background

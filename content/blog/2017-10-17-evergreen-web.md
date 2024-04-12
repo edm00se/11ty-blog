@@ -14,7 +14,7 @@ redirect_from: /web/evergreen-web/
 
 On the 17th of October in 2013, Internet Explorer 11 was released from Microsoft. That means that as of today, this popular\* browser is now four years old and, with all respect to it, it really ought to go.
 
- {% image "./images/Out_Gaston.gif", "Belle chucking Gaston out the door" %}
+![Belle chucking Gaston out the door](./images/Out_Gaston.gif)
  *Good day sir. I said good day!*
 
 ### Evergreen Browsers

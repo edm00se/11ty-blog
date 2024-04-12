@@ -2,11 +2,11 @@
 <ol reversed class="postlist">
 {% for post in postslist | reverse %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-		{%- set modifiedCoverImagePath %}{{ post.data.cover_image | failOverCoverImage | modifyCoverImage }}/{% endset %}
+		{%- set modifiedCoverImagePath %}{{ post.data.cover_image | failOverCoverImage }}{% endset %}
 		<a href="{{ post.url }}" class="postlist-link cover-link">
 			<div class="cover-wrap">
 				TODO: make post tile more "card"-like
-				<span class="cover-img">{% image modifiedCoverImagePath, "cover image from post" %}</span>
+				<span class="cover-img"><img alt="temp cover image" src="/blog/images/cover_images/{{modifiedCoverImagePath}}" /></span>
 				<h2>
 					{% if post.data.title %}
 						{{ post.data.title }}

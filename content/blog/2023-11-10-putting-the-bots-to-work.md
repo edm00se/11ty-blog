@@ -11,7 +11,7 @@ tags:
   - open-source
   - ai
   - bots
-cover_image: ./images/rock-n-roll-monkey-FTfjMijq-Ws-unsplash.jpg
+cover_image: rock-n-roll-monkey-FTfjMijq-Ws-unsplash.jpg
 canonical_url: false
 category: ai
 toc: true

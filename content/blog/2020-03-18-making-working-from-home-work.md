@@ -7,7 +7,7 @@ tags:
   - work
   - home
   - remote
-cover_image: ./images/wfh-djurdjica-boskovic-unsplash.jpg
+cover_image: wfh-djurdjica-boskovic-unsplash.jpg
 category: aside
 canonical_url: false
 permalink: /making-working-from-home-work/

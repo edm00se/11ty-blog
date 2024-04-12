@@ -3,6 +3,30 @@ const Image = require("@11ty/eleventy-img");
 
 module.exports = eleventyConfig => {
 
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		// which file extensions to process
+		extensions: "html",
+
+		// Add any other Image utility options here:
+
+		// optional, output image formats
+		formats: ["avif", "webp", "auto"],
+		// formats: ["auto"],
+
+		// optional, output image widths
+		widths: [600, "auto"],
+
+		sharpOptions: {
+			animated: true
+		},
+
+		// optional, attributes assigned on <img> override these values.
+		defaultAttributes: {
+			loading: "lazy",
+			decoding: "async",
+		},
+	});
+
 	// Eleventy Image shortcode
 	// https://www.11ty.dev/docs/plugins/image/
 	eleventyConfig.addShortcode("image", async function (src, alt, sizes) {

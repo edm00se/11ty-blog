@@ -80,14 +80,14 @@ li {
 }
 
 a[href] {
-	color: var(--text-color-link);
+	color: var(--link-color);
 }
 a[href]:visited {
-	color: var(--text-color-link-visited);
+	color: var(--link-color);
 }
 a[href]:hover,
 a[href]:active {
-	color: var(--text-color-link-active);
+	color: var(--link-color);
 	opacity: .8;
 }
 
@@ -246,7 +246,7 @@ a.cover-link[href]:visited {
 .cover-img,
 .cover-img > img {
 	width: 100%;
-	filter: brightness(75%);
+	filter: brightness(80%);
 }
 
 /* TOC */
@@ -273,7 +273,7 @@ nav.toc ol {
 .postlist-item:before {
 	display: inline-block;
 	pointer-events: none;
-	content: "" counter(start-from, decimal-leading-zero) ". ";
+	/* content: "" counter(start-from, decimal-leading-zero) ". "; */ /* uncomment to re-enable post count */
 	line-height: 100%;
 	text-align: right;
 	margin-left: -1.5rem;

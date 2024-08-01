@@ -5,7 +5,7 @@
 		{%- set modifiedCoverImagePath %}{{ post.data.cover_image | failOverCoverImage }}{% endset %}
 		<a href="{{ post.url }}" class="postlist-link cover-link">
 			<div class="cover-wrap">
-				<span class="cover-img"><img alt="temp cover image" src="/blog/images/cover_images/{{modifiedCoverImagePath}}" /></span>
+				<span class="cover-img"><img alt="cover image" src="/blog/images/cover_images/{{modifiedCoverImagePath}}" /></span>
 				<h2>
 					{% if post.data.title %}
 						{{ post.data.title }}
@@ -31,5 +31,6 @@
 			{%- endfor %}
 		</ul>
 	</li>
+	<hr />
 {% endfor %}
 </ol>

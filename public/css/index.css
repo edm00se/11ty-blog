@@ -262,6 +262,7 @@ nav.toc ol {
 	list-style: none;
 	padding: 0;
 	padding-left: 1.5rem;
+	margin-bottom: 2em;
 }
 .postlist-item {
 	display: flex;
@@ -307,6 +308,9 @@ nav.toc ol {
 }
 .postlist-item-active .postlist-link {
 	font-weight: bold;
+}
+.postlist > hr:last-of-type {
+	display: none;
 }
 
 /* Tags */

@@ -2,6 +2,7 @@
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--link-color: #d07922;
 }
 
 /* Theme colors */
@@ -14,8 +15,8 @@
 
 	--text-color: var(--color-gray-90);
 	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
+	--text-color-link-active: var(--link-color); /* #5f2b48 */
+	--text-color-link-visited: var(--link-color); /* #17050F */
 
 	--syntax-tab-size: 2;
 }
@@ -28,8 +29,8 @@
 
 		/* --text-color is assigned to --color-gray-_ above */
 		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
+		--text-color-link-active: var(--link-color); /* #6969f7 */
+		--text-color-link-visited: var(--link-color); /* #a6a6f8 */
 
 		--background-color: #15202b;
 	}
@@ -87,6 +88,7 @@ a[href]:visited {
 a[href]:hover,
 a[href]:active {
 	color: var(--text-color-link-active);
+	opacity: .8;
 }
 
 main {
@@ -196,6 +198,22 @@ button.toggle-theme {
 	background-color: transparent;
 	border: 0;
 	color: var(--text-color);
+}
+
+/* Hero */
+.author_links {
+	margin-top: -.5em;
+}
+.author_links a {
+	margin: 0 .5em;
+	color: var(--link-color);
+ 	transition: opacity .2s;
+}
+
+.author_links a svg {
+	width: auto;
+	height: 1.25em;
+	vertical-align: middle;
 }
 
 /* Post Cover Image */

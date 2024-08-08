@@ -16,8 +16,8 @@
 				</h2>
 				<span class="postlist-meta-block">
 					{{ post.data.description }}<br/>
-					{% if post.content %}
-						👀 📖 🕑 {{ post.content | timeToRead }} read<br/>
+					{% if post.content and metadata.displayTTR %}
+						<i class="time-to-read">{{ post.content | timeToRead }} read<br/></i>
 					{% endif %}
 				</span>
 			</div>

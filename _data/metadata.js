@@ -7,6 +7,7 @@ module.exports = {
 		"name": "Eric McCormick",
 		"url": "https://edm00se.codes/"
 	},
+	"displayTTR": false,
 	"socials": [
 		{
 			"service": "Mastodon",

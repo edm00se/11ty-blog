@@ -114,6 +114,10 @@ main picture > img, main img {
 	padding-bottom: 1em;
 }
 
+.postlist-meta-block i.time-to-read {
+	font-size: 80%;
+}
+
 header {
 	border-bottom: 1px dashed var(--color-gray-20);
 }

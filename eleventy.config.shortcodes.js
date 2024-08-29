@@ -2,6 +2,7 @@
 
 module.exports = eleventyConfig => {
   // custom gist shortcode
+  // TODO: handle light/dark theme
   eleventyConfig.addShortcode("gist", (user, gistId, fileName) => {
     return `<script src="https://gist.github.com/${user}/${gistId}.js${ fileName ? '?file='+fileName : ''} "></script>`;
   });

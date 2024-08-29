@@ -27,5 +27,9 @@ module.exports = {
 			"username": "edm00se",
 			"icon": true
 		}
-	]
+	],
+	"disqus": {
+		"shortname": "em-devblog",
+		"enable": true
+	}
 }

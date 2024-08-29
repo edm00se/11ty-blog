@@ -57,4 +57,40 @@ layout: layouts/base.njk
 {%- endif %}
 {%- endif %}
 
-TODO: comments
+{%- if metadata.disqus.enable %}
+<h3>NOTE: Disqus Comments Are Deprecated</h3>
+<p>Soon they will go away. I will attempt to export those existing comments while I find a better solution.</p>
+<div class="post-comments">
+  <div id="disqus_thread">
+	<p class="nope">
+		Note: if you're seeing no comments here, it's likely that your browser is blocking them via Firefox's tracking protection or an ad blocker. As it is disqus comments are deprecated on this blog. I will attempt to export those existing comments while I find a better solution.
+	</p>
+  </div>
+</div>
+<script>
+var disqus_config = function () {
+  let pageSlug = '';
+  if('{{ redirect_from }}') {
+  	pageSlug = '{{ redirect_from }}';
+  } else if('{{ category }}' && !'{{ permalink }}') {
+  	pageSlug = '{{ category }}'+'{{ page.fileSlug }}';
+  } else if ('{{ permalink }}') {
+  	pageSlug = '{{ permalink }}';
+  } else {
+	pageSlug = '{{ page.fileSlug }}';
+  }
+  if (pageSlug.charAt(0) === "/") {
+    pageSlug = pageSlug.substring(1);
+  }
+  this.page.url = "{{metadata.url}}"+pageSlug;
+  this.page.identifier = undefined; // pageId;
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://{{ metadata.disqus.shortname }}.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> 
+{%- endif %}

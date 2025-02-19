@@ -17,6 +17,22 @@ const pluginImages = require("./eleventy.config.images.js");
 module.exports = async function(eleventyConfig) {
 	const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
 
+	// remove errors over missing trailing slash or .html
+	eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
+	
+	// Set global permalinks to resource.html style
+	eleventyConfig.addGlobalData("permalink", () => {
+		return (data) =>
+			`${data.page.filePathStem}.${data.page.outputFileExtension}`;
+	});
+
+	// Remove .html from `page.url` entries
+	eleventyConfig.addUrlTransform((page) => {
+		if (page.url.endsWith(".html")) {
+			return page.url.slice(0, -1 * ".html".length);
+		}
+	});
+
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({

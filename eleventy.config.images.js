@@ -1,7 +1,6 @@
-const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
-const Image = require("@11ty/eleventy-img");
+import { eleventyImageTransformPlugin, Image } from "@11ty/eleventy-img";
 
-module.exports = eleventyConfig => {
+export default function(eleventyConfig) {
 
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
 		// which file extensions to process

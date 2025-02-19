@@ -1,20 +1,23 @@
-const { DateTime } = require("luxon");
-const markdownItAnchor = require("markdown-it-anchor");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const pluginToc = require("eleventy-plugin-toc");
-const embedEverything = require("eleventy-plugin-embed-everything");
-const markdownItAttrs = require('markdown-it-attrs');
-const addRemoteData = require("@aaashur/eleventy-plugin-add-remote-data");
-const timeToRead = require('eleventy-plugin-time-to-read');
-const sharp = require("sharp"); // available via @11ty/eleventy-img
+import { DateTime } from "luxon";
+import markdownItAnchor from "markdown-it-anchor";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginBundle from "@11ty/eleventy-plugin-bundle";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import pluginToc from "eleventy-plugin-toc";
+import embedEverything from "eleventy-plugin-embed-everything";
+import markdownItAttrs from 'markdown-it-attrs';
+import addRemoteData from "@aaashur/eleventy-plugin-add-remote-data";
+import timeToRead from 'eleventy-plugin-time-to-read';
+import sharp from "sharp";
 
-const pluginDrafts = require("./eleventy.config.drafts.js");
-const pluginImages = require("./eleventy.config.images.js");
+import pluginDrafts from "./eleventy.config.drafts.js";
+// import pluginImages from "./eleventy.config.images.js";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import myShortcodes from "./eleventy.config.shortcodes.js";
 
-module.exports = async function(eleventyConfig) {
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+export default async function(eleventyConfig) {
 	const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
 
 	// remove errors over missing trailing slash or .html
@@ -64,7 +67,27 @@ module.exports = async function(eleventyConfig) {
 
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts);
-	eleventyConfig.addPlugin(pluginImages);
+	// eleventyConfig.addPlugin(pluginImages);
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		// output image formats
+		formats: ["webp", "gif"],
+
+		// output image widths
+		widths: ["auto"],
+
+		sharpOptions: {
+			animated: true,
+		},
+
+		// optional, attributes assigned on <img> nodes override these values
+		htmlOptions: {
+			imgAttributes: {
+				loading: "lazy",
+				decoding: "async",
+			},
+			pictureAttributes: {}
+		},
+	});
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
@@ -98,7 +121,7 @@ module.exports = async function(eleventyConfig) {
 		output: function(data) {
 		  return data.timing;
 		}
-	  })
+	  });
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -183,7 +206,7 @@ module.exports = async function(eleventyConfig) {
 		// return imgPath.replace('./','./blog/');
 	});
 
-	eleventyConfig.addPlugin(require("./eleventy.config.shortcodes.js"));
+	eleventyConfig.addPlugin(myShortcodes);
 
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {

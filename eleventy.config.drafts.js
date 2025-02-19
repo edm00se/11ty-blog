@@ -24,10 +24,7 @@ function eleventyComputedExcludeFromCollections() {
 	}
 };
 
-module.exports.eleventyComputedPermalink = eleventyComputedPermalink;
-module.exports.eleventyComputedExcludeFromCollections = eleventyComputedExcludeFromCollections;
-
-module.exports = eleventyConfig => {
+export default function(eleventyConfig) {
 	eleventyConfig.addGlobalData("eleventyComputed.permalink", eleventyComputedPermalink);
 	eleventyConfig.addGlobalData("eleventyComputed.eleventyExcludeFromCollections", eleventyComputedExcludeFromCollections);
 

@@ -1,6 +1,6 @@
 // custom shortcodes
 
-module.exports = eleventyConfig => {
+export default function(eleventyConfig) {
   // custom gist shortcode
   // TODO: handle light/dark theme
   eleventyConfig.addShortcode("gist", (user, gistId, fileName) => {

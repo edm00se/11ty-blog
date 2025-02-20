@@ -205,6 +205,12 @@ ul.nav >li:last-child.nav-item {
 	float:right;
 	margin-right: inherit;
 }
+.nav-icon-search {
+	color: var(--link-color);
+	width: auto;
+	height: 1em;
+	/* vertical-align: middle; */
+}
 
 button.toggle-theme {
 	background-color: transparent;

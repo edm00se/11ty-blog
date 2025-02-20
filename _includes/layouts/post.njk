@@ -38,10 +38,14 @@ layout: layouts/base.njk
 {%- endif %}
 
 {%- if toc %}
-<aside class="toc">
-	<h3>Table of Contents</h3>
-  {{ content | toc | safe }}
-</aside>
+<details class="toc">
+	<summary>
+		<h3>Table of Contents</h3>
+	</summary>
+	<aside class="toc">
+	{{ content | toc | safe }}
+	</aside>
+</details>
 {%- endif%}
 
 {{ content | safe }}

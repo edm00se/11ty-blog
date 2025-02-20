@@ -268,11 +268,25 @@ a.cover-link[href]:visited {
 }
 
 /* TOC */
-aside.toc {
-	padding-top: 1em;
-}
 nav.toc ol {
 	list-style: none;
+}
+details.toc {
+	border-radius: 4px;
+	padding-top: 0.5em;
+}
+
+details.toc h3 {
+	display: inline-block;
+}
+
+details.toc[open] > aside {
+	border-left: 1px dashed var(--color-gray-20);
+}
+
+details.toc summary {
+	font-weight: bold;
+	margin: -0.5em -0.5em 0;
 }
 
 /* Posts list */
